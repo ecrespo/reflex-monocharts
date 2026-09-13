@@ -224,3 +224,6 @@ __marimo__/
 
 # Local AI scratch output (not part of the package)
 Claude outputs/
+.coverage
+.states/
+
