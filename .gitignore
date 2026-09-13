@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+.idea/
+
+# Reflex
+.web/
+*.db
+
+# Local AI scratch output (not part of the package)
+Claude outputs/
