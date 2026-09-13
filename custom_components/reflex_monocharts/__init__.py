@@ -91,7 +91,7 @@ from .theme import (
 )
 from .tooltip import mono_gradient, mono_tooltip
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 #: Short aliases, so a whole dashboard reads as ``monocharts.line(...)``.
 monocharts = SimpleNamespace(
