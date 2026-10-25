@@ -14,6 +14,10 @@ on:
 permissions:
   contents: read
 
+# Run every JavaScript action (including those nested in composite actions) on Node 24.
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 concurrency:
   group: release-${{ github.ref }}
   cancel-in-progress: false

@@ -11,6 +11,8 @@ contribution grid. All one hue, all rounded, dark and light.
 pip install reflex-monocharts
 ```
 
+Requires Python 3.11+ and Reflex 0.10.0 or newer.
+
 ![Monocharts for Reflex, dark](https://raw.githubusercontent.com/ecrespo/reflex-monocharts/main/monocharts_demo/assets/preview-dark.png)
 ![Monocharts for Reflex, light](https://raw.githubusercontent.com/ecrespo/reflex-monocharts/main/monocharts_demo/assets/preview-light.png)
 
@@ -193,6 +195,26 @@ uv run reflex run
 
 The gallery shows every chart, a live-state section wired to `rx.State`, a theme
 toggle, a compact toggle and a category filter.
+
+## Releasing
+
+Bump `__version__` in `custom_components/reflex_monocharts/__init__.py`, merge
+`develop` into `main`, then tag the merge commit:
+
+```bash
+git tag v0.2.0 && git push origin v0.2.0
+```
+
+The `Release` workflow re-runs CI, checks the tag matches the package version,
+publishes to PyPI and creates the GitHub release with the built files attached.
+
+## Changelog
+
+- **0.2.0** — Requires Reflex 0.10.0+ and Python 3.11+ (Python 3.10 support
+  dropped). CI workflows run JavaScript actions on Node 24.
+- **0.1.2** — PyPI publishing from the release workflow on version tags.
+- **0.1.1** — Fixed an invalid PyPI classifier.
+- **0.1.0** — Initial release: 28 monochrome chart cards.
 
 ## Credits
 
